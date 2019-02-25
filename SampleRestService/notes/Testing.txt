@@ -1,0 +1,7 @@
+---Testing A Controller
+
+--1 Need to use the SpringRunner or SpringJunit4Runner in all scenarios.We could define @SpringBootTest and could load the whole context
+--2 We could define a random port, inject that port, and use that port to access the resource using rest template.Whole context will be loaded, server gets started and the application will listen to the random port.
+--3 We could use MockMVC to test.
+    --while using mockmvc the whole server doesnt get started, only the context gets loaded and the mvc layer gets mocked.
+    --could also use @WebMvctest, using this the boot only loads the web layer
